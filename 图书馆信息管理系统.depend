@@ -1,0 +1,67 @@
+# depslib dependency file v1.0
+1492259857 source:c:\users\李玲\desktop\图书馆信息管理系统\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+
+1492309352 source:i:\图书馆信息管理系统\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+
+1492492719 source:c:\users\administrator\desktop\图书馆信息管理系统\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+
+1492701371 source:e:\图书馆信息管理系统\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+
+1492501505 source:c:\users\administrator\desktop\图书馆信息管理系统2\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+
+1492701371 source:c:\users\administrator\desktop\图书馆信息管理系统4\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+
+1492701371 source:e:\oj\图书馆信息管理系统\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+
+1497361618 source:c:\users\administrator\desktop\徐海虎图书馆信息管理系统\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+
+1497361618 source:c:\users\administrator\desktop\徐海虎图书馆信息管理系统（含借阅功能）\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+
+1497361620 source:e:\c语言\201616040222徐海虎（上交的c语言大作业）\201616040222徐海虎-源代码\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+
+1506772842 source:e:\程序代码\c语言\201616040222徐海虎（上交的c语言大作业）\201616040222徐海虎-源代码\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+
