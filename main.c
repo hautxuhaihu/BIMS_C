@@ -977,7 +977,7 @@ void reader(LinkList head, linklist head1)//普通读者函数
 void password(linklist head1)//读者更改密码
 {
     linklist p=head1->next;
-    int flge=0;
+    int flag=0;
     char str[10], password[10];
     printf("请输入您的用户名或账号\n");
     scanf("%s",str);
@@ -1005,12 +1005,12 @@ void password(linklist head1)//读者更改密码
 	        scanf("%s", password);
 	        strcpy(p->password,password);
 	        save(head1);
-	        flge=1;
+	        flag=1;
 	        break;
 		}
 		p=p->next;
 	}
-	if(flge==0)
+	if(flag==0)
 		printf("账号信息不存在\n");
 }
 
@@ -1048,7 +1048,7 @@ void titlequery(LinkList head)//书名查找
 {
     LinkList p=head->next;
 	char name[20];
-	int flge=0;
+	int flag=0;
 
     printf("请输入要查询的书名：\n");
 	scanf("%s",name);
@@ -1057,11 +1057,11 @@ void titlequery(LinkList head)//书名查找
 		if(strstr(p->name,name)!=NULL||strstr(name,p->name)!=NULL)
 		{
 			printf("%d%8s%10s%8s%10s%10d%4d%8d\n",p->id,p->name,p->author,p->publisher,p->type,p->pubtime,p->price,p->Num);
-		    flge=1;
+		    flag=1;
 		}
 		  p=p->next;
 	}
-	if(flge==0)
+	if(flag==0)
 	 printf("该书信息不存在\n");
 
 	return;
@@ -1071,7 +1071,7 @@ void authorquery(LinkList head)//作者名查找
 {
 	LinkList p=head->next;
 	char author[20];
-	int flge=0;
+	int flag=0;
 
     printf("请输入要查询的作者名字：\n");
 	scanf("%s",author);
@@ -1080,11 +1080,11 @@ void authorquery(LinkList head)//作者名查找
 		if(strstr(p->author,author)!=NULL||strstr(author,p->author)!=NULL)
 		{
 			printf("%d%8s%10s%8s%10s%10d%4d%8d\n",p->id,p->name,p->author,p->publisher,p->type,p->pubtime,p->price,p->Num);
-		    flge=1;
+		    flag=1;
 		}
 		  p=p->next;
 	}
-	if(flge==0)
+	if(flag==0)
 	 printf("该书信息不存在\n");
 
 	return;
@@ -1094,7 +1094,7 @@ void pressquery(LinkList head)//出版社查找
 {
     LinkList p=head->next;
 	char publisher[20];
-	int flge=0;
+	int flag=0;
 
     printf("请输入要出版社的作者名字：\n");
 	scanf("%s",publisher);
@@ -1103,11 +1103,11 @@ void pressquery(LinkList head)//出版社查找
 		if(strstr(p->publisher,publisher)!=NULL||strstr(publisher,p->publisher)!=NULL)
 		{
 			printf("%d%8s%10s%8s%10s%10d%4d%8d\n",p->id,p->name,p->author,p->publisher,p->type,p->pubtime,p->price,p->Num);
-		    flge=1;
+		    flag=1;
 		}
 		  p=p->next;
 	}
-	if(flge==0)
+	if(flag==0)
 	 printf("该书信息不存在\n");
 	return;
 }
@@ -1115,7 +1115,7 @@ void titleauthor(LinkList head)
 {
     LinkList p=head->next;
 	char name[20],author[20];
-	int flge=0;
+	int flag=0;
 	printf("请输入要查询的书名和作者名字：\n");
 	scanf("%s %s",name,author);
     while(p)
@@ -1123,11 +1123,12 @@ void titleauthor(LinkList head)
 		if((strcmp(p->name,name)==0)&&(strcmp(p->author,author)==0))
 		{
 			printf("%d%8s%10s%8s%10s%10d%4d%8d\n",p->id,p->name,p->author,p->publisher,p->type,p->pubtime,p->price,p->Num);
-		    flge=1;
+		    flag=1;
 		}
 		  p=p->next;
 	}
-	if(flge==0)
+	if(flag==0)
+
 	   printf("该书信息不存在\n");
     return ;
 }
@@ -1135,7 +1136,7 @@ void titleauthor(LinkList head)
 void borrow(LinkList head)
 {
     LinkList p=head->next;
-    int ID,flge=0,a=0;
+    int ID,flag=0,a=0;
     char sel;
     printf("请输入要借阅图书的编号：\n");
     scanf("%d",&ID);
@@ -1154,16 +1155,16 @@ void borrow(LinkList head)
                 printf("编号      书名    作者     出版社   类别 出版年月日 价格   库存\n");
                 printf("%d%8s%10s%8s%10s%10d%4d%8d\n",p->id,p->name,p->author,p->publisher,p->type,p->pubtime,p->price,p->Num);
             }
-            flge=1;
+            flag=1;
             break;
 		}
 		  p=p->next;
 	}
-	if(flge==0)
+	if(flag==0)
     {
         printf("该书信息不存在\n");
     }
-    if(flge!=0&&a!=0)
+    if(flag!=0&&a!=0)
     {
         printf("确定借阅么(一个帐号只能借一本)？请输入 y or n:\n");
         scanf(" %c",&sel);
