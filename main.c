@@ -5,10 +5,10 @@
 
 struct student
 {
-    char name[10];//ÓÃ»§Ãû
-    char id[10];//ÕËºÅ
-    char password[8];//ÃÜÂë
-    char type[10];//ÀàÐÍ
+    char name[10];//ç”¨æˆ·å
+    char id[10];//è´¦å·
+    char password[8];//å¯†ç 
+    char type[10];//ç±»åž‹
     struct student *next;
 };
 typedef struct student lnode, *linklist;
@@ -27,40 +27,40 @@ struct book
 };
 typedef struct book LNode, *LinkList;
 
-void load(LinkList head,linklist head1);//½«ÎÄ¼þÖÐµÄÐÅÏ¢¼ÓÔØµ½Á´±íÖÐµÄº¯Êý
-void test(linklist k,char str1[],char str2[]);//¼ìÑéÕËºÅÐÅÏ¢º¯Êý
-void librarian(LinkList head, linklist head1);//Í¼Êé¹ÜÀíÔ±º¯Êý
-void SMS (linklist head1);//ÓÃ»§¹ÜÀíº¯Êý
-void print(linklist head1);//Êä³öÒÑÓÐ¶ÁÕßÕËºÅÐÅÏ¢
+void load(LinkList head,linklist head1);//å°†æ–‡ä»¶ä¸­çš„ä¿¡æ¯åŠ è½½åˆ°é“¾è¡¨ä¸­çš„å‡½æ•°
+void test(linklist k,char str1[],char str2[]);//æ£€éªŒè´¦å·ä¿¡æ¯å‡½æ•°
+void librarian(LinkList head, linklist head1);//å›¾ä¹¦ç®¡ç†å‘˜å‡½æ•°
+void SMS (linklist head1);//ç”¨æˆ·ç®¡ç†å‡½æ•°
+void print(linklist head1);//è¾“å‡ºå·²æœ‰è¯»è€…è´¦å·ä¿¡æ¯
 void printsms(linklist head1);
 void printread(linklist head1);
-void addread(linklist head1);//Ìí¼Ó¶ÁÕßÕËºÅÐÅÏ¢
-void addallread(linklist head1);//ÅúÁ¿Ìí¼Ó¶ÁÕßÐÅÏ¢
-void save(linklist head1);//½«¶ÁÕßÕËºÅÐ´ÈëÎÄ¼þ
-void deleteread(linklist head1);//É¾³ý¶ÁÕßÕËºÅ
-void deleteallread(linklist head1);//ÅúÁ¿É¾³ý¶ÁÕßÐÅÏ¢
-void change(linklist head1);//ÖØÖÃµ¥¸öÓÃ»§ÃÜÂë
+void addread(linklist head1);//æ·»åŠ è¯»è€…è´¦å·ä¿¡æ¯
+void addallread(linklist head1);//æ‰¹é‡æ·»åŠ è¯»è€…ä¿¡æ¯
+void save(linklist head1);//å°†è¯»è€…è´¦å·å†™å…¥æ–‡ä»¶
+void deleteread(linklist head1);//åˆ é™¤è¯»è€…è´¦å·
+void deleteallread(linklist head1);//æ‰¹é‡åˆ é™¤è¯»è€…ä¿¡æ¯
+void change(linklist head1);//é‡ç½®å•ä¸ªç”¨æˆ·å¯†ç 
 
-void information(LinkList head);//Í¼ÊéÐÅÏ¢¹ÜÀíº¯Êý
-void newbook(LinkList head);//ÐÂÊéÈë¿â
-void allinput(LinkList head);//ÅúÁ¿µ¼Èë
-void Input(LinkList head);//µ¥¶Àµ¼Èë
-void Save(LinkList head);//½«Í¼ÊéÐÅÏ¢Ð´ÈëÎÄ¼þÖÐ
-void Output(LinkList head);//Êä³öÍ¼ÊéÐÅÏ¢
-void Sort(LinkList head);//Í¼ÊéÅÅÐò
-void oldbook(LinkList head);//¾ÉÊéÏÂ¼Ü
-void titledelete(LinkList head);//°´ÊéÃûÉ¾³ý
-void timedelete(LinkList head);//°´³ö°æÊ±¼äÉ¾³ý
-void modify(LinkList head);//Í¼ÊéÐÅÏ¢ÐÞ¸Ä
+void information(LinkList head);//å›¾ä¹¦ä¿¡æ¯ç®¡ç†å‡½æ•°
+void newbook(LinkList head);//æ–°ä¹¦å…¥åº“
+void allinput(LinkList head);//æ‰¹é‡å¯¼å…¥
+void Input(LinkList head);//å•ç‹¬å¯¼å…¥
+void Save(LinkList head);//å°†å›¾ä¹¦ä¿¡æ¯å†™å…¥æ–‡ä»¶ä¸­
+void Output(LinkList head);//è¾“å‡ºå›¾ä¹¦ä¿¡æ¯
+void Sort(LinkList head);//å›¾ä¹¦æŽ’åº
+void oldbook(LinkList head);//æ—§ä¹¦ä¸‹æž¶
+void titledelete(LinkList head);//æŒ‰ä¹¦ååˆ é™¤
+void timedelete(LinkList head);//æŒ‰å‡ºç‰ˆæ—¶é—´åˆ é™¤
+void modify(LinkList head);//å›¾ä¹¦ä¿¡æ¯ä¿®æ”¹
 
-void reader(LinkList head,linklist head1);//ÆÕÍ¨¶ÁÕßº¯Êý
-void password(linklist head1);//¶ÁÕß¸ü¸ÄÃÜÂë
-void query(LinkList head);//²éÑ¯Í¼ÊéÐÅÏ¢
-void borrow(LinkList head);//½èÔÄÍ¼Êé
-void titlequery(LinkList head);//ÊéÃû²éÕÒ
-void authorquery(LinkList head);//×÷ÕßÃû²éÕÒ
-void pressquery(LinkList head);//³ö°æÉç²éÕÒ
-void titleauthor(LinkList head);//°´ÊéÃû×÷ÕßÃû²éÑ¯
+void reader(LinkList head,linklist head1);//æ™®é€šè¯»è€…å‡½æ•°
+void password(linklist head1);//è¯»è€…æ›´æ”¹å¯†ç 
+void query(LinkList head);//æŸ¥è¯¢å›¾ä¹¦ä¿¡æ¯
+void borrow(LinkList head);//å€Ÿé˜…å›¾ä¹¦
+void titlequery(LinkList head);//ä¹¦åæŸ¥æ‰¾
+void authorquery(LinkList head);//ä½œè€…åæŸ¥æ‰¾
+void pressquery(LinkList head);//å‡ºç‰ˆç¤¾æŸ¥æ‰¾
+void titleauthor(LinkList head);//æŒ‰ä¹¦åä½œè€…åæŸ¥è¯¢
 int compare(char k[],char m[], char n[], char str[], char password[]);
 int select, b=0;
 LinkList head;
@@ -79,12 +79,12 @@ int main()
     while(1)
     {
         printf("***************************************************\n");
-        printf("*               »¶Ó­À´µ½Í¼Êé¹ÜÀíÏµÍ³              *\n");
+        printf("*               æ¬¢è¿Žæ¥åˆ°å›¾ä¹¦ç®¡ç†ç³»ç»Ÿ              *\n");
         printf("***************************************************\n\n");
-        printf("ÇëÊäÈëÓÃ»§ÃûºÍÃÜÂë»òÕËºÅºÍÃÜÂë£º\n");
-        printf("ÓÃ»§Ãû»òÕËºÅ£º");
+        printf("è¯·è¾“å…¥ç”¨æˆ·åå’Œå¯†ç æˆ–è´¦å·å’Œå¯†ç ï¼š\n");
+        printf("ç”¨æˆ·åæˆ–è´¦å·ï¼š");
         scanf("%s",str1);
-        printf("ÃÜÂë£º");
+        printf("å¯†ç ï¼š");
         scanf("%s",str2);
         test(k,str1,str2);
     }
@@ -145,13 +145,13 @@ void test(linklist k,char str1[],char str2[])
             b=compare(k->name,k->id,k->password,str1,str2);
             if(b==1)
             {
-               if(strcmp(k->type,"¹ÜÀíÔ±")==0)
+               if(strcmp(k->type,"ç®¡ç†å‘˜")==0)
                {
-                   librarian(head, head1);//Í¼Êé¹ÜÀíÔ±º¯Êý
+                   librarian(head, head1);//å›¾ä¹¦ç®¡ç†å‘˜å‡½æ•°
                }
-               if(strcmp(k->type,"ÓÃ»§")==0)
+               if(strcmp(k->type,"ç”¨æˆ·")==0)
                {
-                   reader(head, head1);//ÆÕÍ¨¶ÁÕßº¯Êý
+                   reader(head, head1);//æ™®é€šè¯»è€…å‡½æ•°
                }
                break;
             }
@@ -160,14 +160,14 @@ void test(linklist k,char str1[],char str2[])
         int b1;
         while(b!=1)
         {
-            printf("ÊäÈëÐÅÏ¢´íÎó£¬ÍË³öÇë°´0£¬ÔÙ´ÎÊäÈë°´1£º\n");
+            printf("è¾“å…¥ä¿¡æ¯é”™è¯¯ï¼Œé€€å‡ºè¯·æŒ‰0ï¼Œå†æ¬¡è¾“å…¥æŒ‰1ï¼š\n");
             scanf("%d",&b1);
             if(b1==1)
             {
-                printf("ÇëÖØÐÂÊäÈëÐÅÏ¢£º\n");
-                printf("ÓÃ»§Ãû»òÕËºÅ£º");
+                printf("è¯·é‡æ–°è¾“å…¥ä¿¡æ¯ï¼š\n");
+                printf("ç”¨æˆ·åæˆ–è´¦å·ï¼š");
                 scanf("%s",str1);
-                printf("ÃÜÂë£º");
+                printf("å¯†ç ï¼š");
                 scanf("%s",str2);
                 k=head1->next;
                 while(k)
@@ -176,13 +176,13 @@ void test(linklist k,char str1[],char str2[])
                     b=compare(k->name,k->id,k->password,str1,str2);
                     if(b==1)
                     {
-                        if(strcmp(k->type,"¹ÜÀíÔ±")==0)
+                        if(strcmp(k->type,"ç®¡ç†å‘˜")==0)
                         {
-                            librarian(head, head1);//Í¼Êé¹ÜÀíÔ±º¯Êý
+                            librarian(head, head1);//å›¾ä¹¦ç®¡ç†å‘˜å‡½æ•°
                         }
-                        if(strcmp(k->type,"ÓÃ»§")==0)
+                        if(strcmp(k->type,"ç”¨æˆ·")==0)
                         {
-                            reader(head, head1);//ÆÕÍ¨¶ÁÕßº¯Êý
+                            reader(head, head1);//æ™®é€šè¯»è€…å‡½æ•°
                         }
                         break;
                     }
@@ -198,89 +198,89 @@ int compare(char k[],char m[], char n[], char str[], char password[])
 {
     if((strcmp(str,k)==0||strcmp(str,m)==0)&&(strcmp(password,n)==0))
     {
-        printf("ÊäÈëÐÅÏ¢ÕýÈ·,¼´½«½øÈëÏµÍ³\n\n");
+        printf("è¾“å…¥ä¿¡æ¯æ­£ç¡®,å³å°†è¿›å…¥ç³»ç»Ÿ\n\n");
         return 1;
     }
 
     return 0;
 }
 
-void librarian(LinkList head, linklist head1)//Í¼Êé¹ÜÀíÔ±º¯Êý
+void librarian(LinkList head, linklist head1)//å›¾ä¹¦ç®¡ç†å‘˜å‡½æ•°
 {
     do{
     printf("******************************************\n");
-    printf("*             1:ÓÃ»§¹ÜÀí                 *\n");
-    printf("*             2:Í¼ÊéÐÅÏ¢¹ÜÀí             *\n");
-    printf("*             3:ÍË³ö                     *\n");
+    printf("*             1:ç”¨æˆ·ç®¡ç†                 *\n");
+    printf("*             2:å›¾ä¹¦ä¿¡æ¯ç®¡ç†             *\n");
+    printf("*             3:é€€å‡º                     *\n");
     printf("******************************************\n\n");
-    printf("ÇëÊäÈëÄãÒª½øÐÐµÄÏîÄ¿Ñ¡Ïî\n");
+    printf("è¯·è¾“å…¥ä½ è¦è¿›è¡Œçš„é¡¹ç›®é€‰é¡¹\n");
     scanf("%d", &select);
     switch(select)
     {
         case 1:
-            SMS (head1);//ÓÃ»§¹ÜÀíº¯Êý
+            SMS (head1);//ç”¨æˆ·ç®¡ç†å‡½æ•°
             break;
         case 2:
-            information(head);//Í¼ÊéÐÅÏ¢¹ÜÀíº¯Êý
+            information(head);//å›¾ä¹¦ä¿¡æ¯ç®¡ç†å‡½æ•°
             break;
     }}while(select!=3);
 }
 
-void SMS(linklist head1)//ÓÃ»§¹ÜÀíº¯Êý
+void SMS(linklist head1)//ç”¨æˆ·ç®¡ç†å‡½æ•°
 {
     do{
     printf("************************************\n");
-    printf("*        1:µ¥¶ÀÌí¼ÓÕËºÅ            *\n");
-    printf("*        2:ÅúÁ¿Ìí¼ÓÕËºÅ            *\n");
-    printf("*        3:µ¥¶ÀÉ¾³ýÕËºÅ            *\n");
-    printf("*        4:ÅúÁ¿É¾³ýÕËºÅ            *\n");
-    printf("*        5:Êä³öÒÑÓÐÕËºÅ            *\n");
-    printf("*        6:ÖØÖÃµ¥¸öÓÃ»§ÃÜÂë        *\n");
-    printf("*        7:ÍË³ö                    *\n");
+    printf("*        1:å•ç‹¬æ·»åŠ è´¦å·            *\n");
+    printf("*        2:æ‰¹é‡æ·»åŠ è´¦å·            *\n");
+    printf("*        3:å•ç‹¬åˆ é™¤è´¦å·            *\n");
+    printf("*        4:æ‰¹é‡åˆ é™¤è´¦å·            *\n");
+    printf("*        5:è¾“å‡ºå·²æœ‰è´¦å·            *\n");
+    printf("*        6:é‡ç½®å•ä¸ªç”¨æˆ·å¯†ç         *\n");
+    printf("*        7:é€€å‡º                    *\n");
     printf("************************************\n\n");
-    printf("ÇëÊäÈëÄãÒª½øÐÐµÄÏîÄ¿Ñ¡Ïî\n");
+    printf("è¯·è¾“å…¥ä½ è¦è¿›è¡Œçš„é¡¹ç›®é€‰é¡¹\n");
     scanf("%d", &select);
 
     switch(select)
     {
         case 1:
-            addread(head1);//µ¥¶ÀÌí¼Ó
+            addread(head1);//å•ç‹¬æ·»åŠ 
             break;
         case 2:
-            addallread(head1);//ÅúÁ¿Ìí¼Ó
+            addallread(head1);//æ‰¹é‡æ·»åŠ 
             break;
         case 3:
-            deleteread(head1);//É¾³ý¶ÁÕßÕËºÅ
+            deleteread(head1);//åˆ é™¤è¯»è€…è´¦å·
             break;
         case 4:
-            deleteallread(head1);//ÅúÁ¿É¾³ý
+            deleteallread(head1);//æ‰¹é‡åˆ é™¤
             break;
         case 5:
-            print(head1);//Êä³ö¶ÁÕßÐÅÏ¢
+            print(head1);//è¾“å‡ºè¯»è€…ä¿¡æ¯
             break;
         case 6:
-            change(head1);//ÖØÖÃµ¥¸öÓÃ»§ÃÜÂë
+            change(head1);//é‡ç½®å•ä¸ªç”¨æˆ·å¯†ç 
             break;
         default:return;
     }}while(select!=7);
 }
-void print(linklist head1)//ÏÔÊ¾ÒÑÓÐ¶ÁÕßÐÅÏ¢
+void print(linklist head1)//æ˜¾ç¤ºå·²æœ‰è¯»è€…ä¿¡æ¯
 {
     do{
     printf("************************************\n");
-    printf("*        1:Êä³ö¹ÜÀíÔ±ÕËºÅ            *\n");
-    printf("*        2:Êä³öÓÃ»§ÕËºÅ              *\n");
-    printf("*        3:ÍË³ö                    *\n");
+    printf("*        1:è¾“å‡ºç®¡ç†å‘˜è´¦å·            *\n");
+    printf("*        2:è¾“å‡ºç”¨æˆ·è´¦å·              *\n");
+    printf("*        3:é€€å‡º                    *\n");
     printf("************************************\n\n");
-    printf("ÇëÊäÈëÄãÒª½øÐÐµÄÏîÄ¿Ñ¡Ïî\n");
+    printf("è¯·è¾“å…¥ä½ è¦è¿›è¡Œçš„é¡¹ç›®é€‰é¡¹\n");
     scanf("%d", &select);
     switch(select)
     {
         case 1:
-            printsms(head1);//µ¥¶ÀÌí¼Ó
+            printsms(head1);//å•ç‹¬æ·»åŠ 
             break;
         case 2:
-            printread(head1);//ÅúÁ¿Ìí¼Ó
+            printread(head1);//æ‰¹é‡æ·»åŠ 
             break;
         default:return;
     }}while(select!=3);
@@ -291,7 +291,7 @@ void printsms(linklist head1)
     int i=0;
     while(q)
     {
-        if(strcmp(q->type,"¹ÜÀíÔ±")==0)
+        if(strcmp(q->type,"ç®¡ç†å‘˜")==0)
         {
             printf("%s %s %s\n",q->name,q->id,q->password);
             i++;
@@ -299,7 +299,7 @@ void printsms(linklist head1)
         q=q->next;
     }
     if(i==0)
-        printf("Ã»ÓÐ¹ÜÀíÔ±ÐÅÏ¢£¡");
+        printf("æ²¡æœ‰ç®¡ç†å‘˜ä¿¡æ¯ï¼");
 }
 void printread(linklist head1)
 {
@@ -307,7 +307,7 @@ void printread(linklist head1)
     int i=0;
     while(q)
     {
-        if(strcmp(q->type,"ÓÃ»§")==0)
+        if(strcmp(q->type,"ç”¨æˆ·")==0)
         {
             printf("%s %s %s\n",q->name,q->id,q->password);
             i++;
@@ -316,7 +316,7 @@ void printread(linklist head1)
     }
     if(i==0)
     {
-        printf("Ã»ÓÐÓÃ»§ÐÅÏ¢£¡");
+        printf("æ²¡æœ‰ç”¨æˆ·ä¿¡æ¯ï¼");
     }
     return;
 }
@@ -328,7 +328,7 @@ void addread(linklist head1)
     char password[20];
     char type[10];
     FILE *fp;
-    if((fp=fopen("userinfo.dat","r+"))==NULL)
+    if((fp=fopen("userinfo.txt","r+"))==NULL)
     {
         printf("File Open Error!\n");
         exit(0);
@@ -344,8 +344,8 @@ void addread(linklist head1)
             rear->next=p;
             rear=p;
         }
-    printf("ÇëÒÀ´ÎÊäÈëÓÃ»§Ãû¡¢ÕËºÅ¡¢ÃÜÂëºÍÀà±ð£¬ÊäÈë#±íÊ¾ÊäÈë½áÊø\n");
-    printf("ÊäÈëÊ¾Àý£ºÕÅÈý 1 111111 ÓÃ»§\n");
+    printf("è¯·ä¾æ¬¡è¾“å…¥ç”¨æˆ·åã€è´¦å·ã€å¯†ç å’Œç±»åˆ«ï¼Œè¾“å…¥#è¡¨ç¤ºè¾“å…¥ç»“æŸ\n");
+    printf("è¾“å…¥ç¤ºä¾‹ï¼šå¼ ä¸‰ 1 111111 ç”¨æˆ·\n");
         while(scanf("%s",name)!=EOF&&strcmp(name,"#")!=0)
         {
             p=(linklist)malloc(sizeof(lnode));
@@ -360,7 +360,7 @@ void addread(linklist head1)
             rear=p;
         }
         rear->next=NULL;
-        printf("ÒÑÓÐÆÕÍ¨¶ÁÕßÓÃ»§ÐÅÏ¢:\n");
+        printf("å·²æœ‰æ™®é€šè¯»è€…ç”¨æˆ·ä¿¡æ¯:\n");
         printread(head1);
         save(head1);
 }
@@ -371,7 +371,7 @@ void addallread(linklist head1)
 	char name[10],id[20],password[20],type[10];
     FILE *fp;
 
-    if((fp=fopen("userinfo.dat","r"))==NULL)
+    if((fp=fopen("userinfo.txt","r"))==NULL)
 	{
 		printf("File Open Error!\n");
 		exit(0);
@@ -387,7 +387,7 @@ void addallread(linklist head1)
 	  rear->next=p;
 	  rear=p;
     }
-    if((fp=fopen("´ýÅúÁ¿Ìí¼ÓµÄ¶ÁÕßÕËºÅÃÜÂë.txt","r"))==NULL)
+    if((fp=fopen("å¾…æ‰¹é‡æ·»åŠ çš„è¯»è€…è´¦å·å¯†ç .txt","r"))==NULL)
 	{
 		printf("File Open Error!\n");
 		exit(0);
@@ -405,13 +405,13 @@ void addallread(linklist head1)
     }
     rear->next=NULL;
     save(head1);
-    printf("´ýÌí¼ÓµÄ¶ÁÕßÐÅÏ¢ÒÑÅúÁ¿µ¼Èë£¡\n");
-    printf("µ±Ç°¶ÁÕßÐÅÏ¢Îª£º\n");
+    printf("å¾…æ·»åŠ çš„è¯»è€…ä¿¡æ¯å·²æ‰¹é‡å¯¼å…¥ï¼\n");
+    printf("å½“å‰è¯»è€…ä¿¡æ¯ä¸ºï¼š\n");
     printread(head1);
 }
-void deleteread(linklist head1)//É¾³ý¶ÁÕßÕËºÅ
+void deleteread(linklist head1)//åˆ é™¤è¯»è€…è´¦å·
 {
-    printf("ÇëÊäÈë´ýÉ¾³ýµÄ¶ÁÕßÓÃ»§Ãû»òÕËºÅÐÅÏ¢\n");
+    printf("è¯·è¾“å…¥å¾…åˆ é™¤çš„è¯»è€…ç”¨æˆ·åæˆ–è´¦å·ä¿¡æ¯\n");
     linklist p=head1,pre;
     char Delete[20];
     int flag=0;
@@ -424,12 +424,12 @@ void deleteread(linklist head1)//É¾³ý¶ÁÕßÕËºÅ
         {
                 if(strcmp(Delete,p->name)==0||strcmp(Delete,p->id)==0)
                 {
-                    printf("´ýÉ¾³ýµÄ¶ÁÕßÐÅÏ¢Îª£º\n");
+                    printf("å¾…åˆ é™¤çš„è¯»è€…ä¿¡æ¯ä¸ºï¼š\n");
                     printf("%s %s %s %s\n",p->name,p->id,p->password,p->type);
                     pre->next=p->next;
                     flag=1;
                     free(p);
-                    printf("¶ÁÕßÐÅÏ¢ÒÑÉ¾³ý\n");
+                    printf("è¯»è€…ä¿¡æ¯å·²åˆ é™¤\n");
                 }
         }
 
@@ -437,7 +437,7 @@ void deleteread(linklist head1)//É¾³ý¶ÁÕßÕËºÅ
     if(flag==0)
     {
 
-        printf("²éÎÞ¶ÁÕßÐÅÏ¢£¬ÎÞ·¨É¾³ý\n");
+        printf("æŸ¥æ— è¯»è€…ä¿¡æ¯ï¼Œæ— æ³•åˆ é™¤\n");
 
     }
     save(head1);
@@ -447,7 +447,7 @@ void deleteallread(linklist head1)
     linklist p,rear=head1,pre,q;
     char name[10],str[10],id[20],password[20],type[10];
     FILE *fp;
-    if((fp=fopen("userinfo.dat","r"))==NULL)
+    if((fp=fopen("userinfo.txt","r"))==NULL)
 	{
 		printf("File Open Error!\n");
 		exit(0);
@@ -463,7 +463,7 @@ void deleteallread(linklist head1)
 	  rear=p;
     }
     rear->next=NULL;
-    if((fp=fopen("´ýÅúÁ¿É¾³ý¶ÁÕßÕËºÅÃÜÂë.txt","r"))==NULL)
+    if((fp=fopen("å¾…æ‰¹é‡åˆ é™¤è¯»è€…è´¦å·å¯†ç .txt","r"))==NULL)
 	{
 		printf("File Open Error!\n");
 		exit(0);
@@ -484,8 +484,8 @@ void deleteallread(linklist head1)
           pre=pre->next;
       }
     }
-    printf("ÒÑÅúÁ¿É¾³ý¶ÁÕßÐÅÏ¢\n");
-    printf("µ±Ç°¶ÁÕßÐÅÏ¢Îª£º\n");
+    printf("å·²æ‰¹é‡åˆ é™¤è¯»è€…ä¿¡æ¯\n");
+    printf("å½“å‰è¯»è€…ä¿¡æ¯ä¸ºï¼š\n");
     printread(head1);
     save(head1);
 }
@@ -495,17 +495,17 @@ void change(linklist head1)
     linklist p=head1->next;
     char str[10];
     int flag=0;
-    printf("ÇëÊäÈëÒªÖØÖÃÃÜÂëµÄÓÃ»§Ãû»òÕËºÅ£º\n");
+    printf("è¯·è¾“å…¥è¦é‡ç½®å¯†ç çš„ç”¨æˆ·åæˆ–è´¦å·ï¼š\n");
     scanf("%s",str);
     while(p)
     {
-        if(strcmp(p->type,"ÓÃ»§")==0)
+        if(strcmp(p->type,"ç”¨æˆ·")==0)
         {
             if(strcmp(p->name,str)==0||strcmp(p->id,str)==0)
             {
-                printf("ÇëÊäÈëÖØÖÃÃÜÂë£º\n");
+                printf("è¯·è¾“å…¥é‡ç½®å¯†ç ï¼š\n");
                 scanf("%s",p->password);
-                printf("ÒÑÖØÖÃÓÃ»§ÃÜÂë£¡\n");
+                printf("å·²é‡ç½®ç”¨æˆ·å¯†ç ï¼\n");
                 flag=1;
             }
         }
@@ -513,9 +513,9 @@ void change(linklist head1)
     }
     if(flag==0)
     {
-        printf("Î´ÕÒµ½¶ÔÓ¦µÄÓÃ»§Ãû»òÕËºÅ£¡\n");
+        printf("æœªæ‰¾åˆ°å¯¹åº”çš„ç”¨æˆ·åæˆ–è´¦å·ï¼\n");
     }
-    printf("µ±Ç°¶ÁÕßÐÅÏ¢Îª£º\n");
+    printf("å½“å‰è¯»è€…ä¿¡æ¯ä¸ºï¼š\n");
     printread(head1);
     save(head1);
 }
@@ -523,7 +523,7 @@ void save(linklist head1)
 {
     FILE *fp;
     linklist p;
-    if((fp=fopen("userinfo.dat","w"))==NULL)
+    if((fp=fopen("userinfo.txt","w"))==NULL)
     {
         printf("File Open Error!\n");
         exit(0);
@@ -534,49 +534,49 @@ void save(linklist head1)
         }
         fclose(fp);
 }
-void information(LinkList head)//Í¼ÊéÐÅÏ¢¹ÜÀíº¯Êý
+void information(LinkList head)//å›¾ä¹¦ä¿¡æ¯ç®¡ç†å‡½æ•°
 {
       do{
       printf("**********************************************\n");
-	  printf("*         »¶Ó­½øÈëÍ¼Êé¹ÜÀíÔ±½çÃæ             *\n");
-	  printf("*         1£ºÐÂÊéÉÏ¼Ü                        *\n");
-	  printf("*         2£ºÊä³öÍ¼ÊéÐÅÏ¢                    *\n");
-	  printf("*         3£º²éÑ¯                            *\n");
-	  printf("*         4£ºÅÅÐò                            *\n");
-	  printf("*         5£º¾ÉÊéÏÂ¼Ü                        *\n");
-	  printf("*         6£ºÐÞ¸ÄÍ¼ÊéÐÅÏ¢                    *\n");
-	  printf("*         7£ºÍË³ö                            *\n");
+	  printf("*         æ¬¢è¿Žè¿›å…¥å›¾ä¹¦ç®¡ç†å‘˜ç•Œé¢             *\n");
+	  printf("*         1ï¼šæ–°ä¹¦ä¸Šæž¶                        *\n");
+	  printf("*         2ï¼šè¾“å‡ºå›¾ä¹¦ä¿¡æ¯                    *\n");
+	  printf("*         3ï¼šæŸ¥è¯¢                            *\n");
+	  printf("*         4ï¼šæŽ’åº                            *\n");
+	  printf("*         5ï¼šæ—§ä¹¦ä¸‹æž¶                        *\n");
+	  printf("*         6ï¼šä¿®æ”¹å›¾ä¹¦ä¿¡æ¯                    *\n");
+	  printf("*         7ï¼šé€€å‡º                            *\n");
 	  printf("**********************************************\n");
 
-	  printf("     ÇëÊäÈëÄãµÄÑ¡Ôñ£º\n");
+	  printf("     è¯·è¾“å…¥ä½ çš„é€‰æ‹©ï¼š\n");
       scanf("%d",&select);
 
     switch(select)
     {
-        case 1:newbook(head);//ÐÂÊéÉÏ¼Ü
+        case 1:newbook(head);//æ–°ä¹¦ä¸Šæž¶
 		       break;
-	    case 2:Output(head);//Í¼ÊéÊä³ö
+	    case 2:Output(head);//å›¾ä¹¦è¾“å‡º
 		       break;
-	    case 3:query(head);//Í¼Êé²éÕÒ
+	    case 3:query(head);//å›¾ä¹¦æŸ¥æ‰¾
 		       break;
-        case 4:Sort(head);//Í¼ÊéÅÅÐò
+        case 4:Sort(head);//å›¾ä¹¦æŽ’åº
 			   break;
-	    case 5:oldbook(head);//¾ÉÊéÏÂ¼Ü
+	    case 5:oldbook(head);//æ—§ä¹¦ä¸‹æž¶
 		       break;
-	    case 6:modify(head);//ÐÞ¸ÄÍ¼ÊéÐÅÏ¢
+	    case 6:modify(head);//ä¿®æ”¹å›¾ä¹¦ä¿¡æ¯
 		       break;
 
     }}while(select!=7);
 }
-void newbook(LinkList head)//ÐÂÊéÈë¿â
+void newbook(LinkList head)//æ–°ä¹¦å…¥åº“
 {
     do{
     printf("******************************************\n");
-    printf("*              1:µ¥¶Àµ¼Èë                *\n");
-    printf("*              2:ÅúÁ¿µ¼Èë¡¡¡¡¡¡          *\n");
-    printf("*              3:ÍË³ö                    *\n");
+    printf("*              1:å•ç‹¬å¯¼å…¥                *\n");
+    printf("*              2:æ‰¹é‡å¯¼å…¥ã€€ã€€ã€€          *\n");
+    printf("*              3:é€€å‡º                    *\n");
     printf("******************************************\n\n");
-    printf("ÇëÊäÈëÄãÒª½øÐÐµÄÏîÄ¿Ñ¡Ïî\n");
+    printf("è¯·è¾“å…¥ä½ è¦è¿›è¡Œçš„é¡¹ç›®é€‰é¡¹\n");
     scanf("%d", &select);
     switch(select)
     {
@@ -590,14 +590,14 @@ void newbook(LinkList head)//ÐÂÊéÈë¿â
     }}while(select!=3);
 }
 
-void Input(LinkList head)//µ¥¶ÀÌí¼ÓÍ¼ÊéÐÅÏ¢
+void Input(LinkList head)//å•ç‹¬æ·»åŠ å›¾ä¹¦ä¿¡æ¯
 {
 	LinkList p,rear=head;
 	char name[20],author[20],publisher[20],type[20];
 	int id,pubtime,price,Num;
     FILE *fp;
 
-    if((fp=fopen("bookinfo.dat","r"))==NULL)
+    if((fp=fopen("bookinfo.txt","r"))==NULL)
 	{
 		printf("File Open Error!\n");
 		exit(0);
@@ -618,8 +618,8 @@ void Input(LinkList head)//µ¥¶ÀÌí¼ÓÍ¼ÊéÐÅÏ¢
 	  rear=p;
     }
 
-	printf("ÇëÒÀ´ÎÊäÈëÍ¼Êé±àºÅ¡¢ÊéÃû¡¢×÷Õß¡¢³ö°æÉç¡¢Àà±ð¡¢³ö°æÄêÔÂÈÕ¡¢¼Û¸ñ,ÊäÈë-1±íÊ¾ÊäÈë½áÊø\n");
-    printf("ÊäÈëÊ¾Àý£º201501 Î÷ÓÎ¼Ç Îâ³Ð¶÷ ÖÐ»ª  ÃûÖø 19580624 56\n");
+	printf("è¯·ä¾æ¬¡è¾“å…¥å›¾ä¹¦ç¼–å·ã€ä¹¦åã€ä½œè€…ã€å‡ºç‰ˆç¤¾ã€ç±»åˆ«ã€å‡ºç‰ˆå¹´æœˆæ—¥ã€ä»·æ ¼,è¾“å…¥-1è¡¨ç¤ºè¾“å…¥ç»“æŸ\n");
+    printf("è¾“å…¥ç¤ºä¾‹ï¼š201501 è¥¿æ¸¸è®° å´æ‰¿æ© ä¸­åŽ  åè‘— 19580624 56\n");
     while(scanf("%d",&id),id!=-1)
     {
       p=(LinkList)malloc(sizeof(LNode));
@@ -638,17 +638,17 @@ void Input(LinkList head)//µ¥¶ÀÌí¼ÓÍ¼ÊéÐÅÏ¢
 
    rear->next=NULL;
    Save(head);
-   printf("ÏÖÔÚµÄÍ¼ÊéÐÅÏ¢Îª£º\n");
+   printf("çŽ°åœ¨çš„å›¾ä¹¦ä¿¡æ¯ä¸ºï¼š\n");
    Output(head);
 }
-void allinput(LinkList head)//ÅúÁ¿Ìí¼ÓÍ¼ÊéÐÅÏ¢
+void allinput(LinkList head)//æ‰¹é‡æ·»åŠ å›¾ä¹¦ä¿¡æ¯
 {
     LinkList p,rear=head;
 	char name[20],author[20],publisher[20],type[20];
 	int id,pubtime,price,Num;
     FILE *fp;
 
-    if((fp=fopen("bookinfo.dat","r"))==NULL)
+    if((fp=fopen("bookinfo.txt","r"))==NULL)
 	{
 		printf("File Open Error!\n");
 		exit(0);
@@ -668,7 +668,7 @@ void allinput(LinkList head)//ÅúÁ¿Ìí¼ÓÍ¼ÊéÐÅÏ¢
 	  rear->next=p;
 	  rear=p;
     }
-    if((fp=fopen("´ýÅúÁ¿Ìí¼ÓµÄÐÂÊéÐÅÏ¢.txt","r"))==NULL)
+    if((fp=fopen("å¾…æ‰¹é‡æ·»åŠ çš„æ–°ä¹¦ä¿¡æ¯.txt","r"))==NULL)
 	{
 		printf("File Open Error!\n");
 		exit(0);
@@ -690,16 +690,16 @@ void allinput(LinkList head)//ÅúÁ¿Ìí¼ÓÍ¼ÊéÐÅÏ¢
     }
     rear->next=NULL;
     Save(head);
-    printf("ÐÂÊéÒÑÅúÁ¿µ¼Èë£¡\n");
-    printf("µ±Ç°Í¼ÊéÐÅÏ¢Îª£º\n");
+    printf("æ–°ä¹¦å·²æ‰¹é‡å¯¼å…¥ï¼\n");
+    printf("å½“å‰å›¾ä¹¦ä¿¡æ¯ä¸ºï¼š\n");
     Output(head);
 }
-void Save(LinkList head)//½«Í¼Êé¹ÝÐÅÏ¢µ¼ÈëÎÄ¼þÖÐ
+void Save(LinkList head)//å°†å›¾ä¹¦é¦†ä¿¡æ¯å¯¼å…¥æ–‡ä»¶ä¸­
 {
 	FILE *fp;
 	LinkList p;
 
-	if((fp=fopen("bookinfo.dat","w"))==NULL)
+	if((fp=fopen("bookinfo.txt","w"))==NULL)
 	{
 		printf("File Open Error!\n");
 		exit(0);
@@ -711,17 +711,17 @@ void Save(LinkList head)//½«Í¼Êé¹ÝÐÅÏ¢µ¼ÈëÎÄ¼þÖÐ
 	fclose(fp);
 }
 
-void Output(LinkList head)//Êä³öÍ¼ÊéÐÅÏ¢
+void Output(LinkList head)//è¾“å‡ºå›¾ä¹¦ä¿¡æ¯
 {
    LinkList p=head->next;
 
    if(p==NULL)
    {
-	   printf("Ã»ÓÐÍ¼ÊéÐÅÏ¢\n");
+	   printf("æ²¡æœ‰å›¾ä¹¦ä¿¡æ¯\n");
    }
    else
    {
-       printf("±àºÅ      ÊéÃû    ×÷Õß     ³ö°æÉç   Àà±ð ³ö°æÄêÔÂÈÕ ¼Û¸ñ   ¿â´æ\n");
+       printf("ç¼–å·      ä¹¦å    ä½œè€…     å‡ºç‰ˆç¤¾   ç±»åˆ« å‡ºç‰ˆå¹´æœˆæ—¥ ä»·æ ¼   åº“å­˜\n");
 	   while(p)
 	   {
          printf("%d%8s%10s%8s%8s%10d%4d%8d\n",p->id,p->name,p->author,p->publisher,p->type,p->pubtime,p->price,p->Num);
@@ -730,7 +730,7 @@ void Output(LinkList head)//Êä³öÍ¼ÊéÐÅÏ¢
    }
 }
 
-void Sort(LinkList head)//Í¼ÊéÅÅÐò£¨°´ÊéºÅ£©
+void Sort(LinkList head)//å›¾ä¹¦æŽ’åºï¼ˆæŒ‰ä¹¦å·ï¼‰
 {
    LinkList p1=head,p2,q=NULL;
    p2=p1;
@@ -751,40 +751,40 @@ void Sort(LinkList head)//Í¼ÊéÅÅÐò£¨°´ÊéºÅ£©
 		   p2=p2->next;
        }
     }
-   printf("ÅÅÐòºóµÄÍ¼ÊéÐÅÏ¢Îª£º\n");
+   printf("æŽ’åºåŽçš„å›¾ä¹¦ä¿¡æ¯ä¸ºï¼š\n");
    Output(head);
    Save(head);
 }
 
-void oldbook(LinkList head)//¾ÉÊéÏÂ¼Ü
+void oldbook(LinkList head)//æ—§ä¹¦ä¸‹æž¶
 {
     do{
     printf("************************************\n");
-    printf("*         1:°´ÊéÃûÉ¾³ý             *\n");
-    printf("*         2:°´³ö°æÊ±¼äÉ¾³ý         *\n");
-    printf("*         3£ºÍË³ö                  *\n");
+    printf("*         1:æŒ‰ä¹¦ååˆ é™¤             *\n");
+    printf("*         2:æŒ‰å‡ºç‰ˆæ—¶é—´åˆ é™¤         *\n");
+    printf("*         3ï¼šé€€å‡º                  *\n");
     printf("************************************\n\n");
-    printf("      ÇëÊäÈëÄãÒª½øÐÐµÄÏîÄ¿Ñ¡Ïî\n");
+    printf("      è¯·è¾“å…¥ä½ è¦è¿›è¡Œçš„é¡¹ç›®é€‰é¡¹\n");
     scanf("%d", &select);
     switch(select)
     {
         case 1:
-            titledelete(head);//°´ÊéÃûÉ¾³ý
+            titledelete(head);//æŒ‰ä¹¦ååˆ é™¤
             break;
         case 2:
-            timedelete(head);//°´³ö°æÊ±¼äÉ¾³ý
+            timedelete(head);//æŒ‰å‡ºç‰ˆæ—¶é—´åˆ é™¤
             break;
         default:return;
     }}while(select!=3);
 }
 
-void titledelete(LinkList head)//°´ÊéÃûÉ¾³ý
+void titledelete(LinkList head)//æŒ‰ä¹¦ååˆ é™¤
 {
     LinkList p1=head,p3=head->next;
     char name[10];
 	int  k=0;
 
-	printf("ÇëÊäÈëÒªÉ¾³ýÍ¼ÊéµÄÊéÃû£º\n");
+	printf("è¯·è¾“å…¥è¦åˆ é™¤å›¾ä¹¦çš„ä¹¦åï¼š\n");
 	scanf("%s",name);
 	while(p3)
 	{
@@ -804,22 +804,22 @@ void titledelete(LinkList head)//°´ÊéÃûÉ¾³ý
 	}
 	if(k==0)
 	{
-		printf("¸ÃÍ¼ÊéÐÅÏ¢²»´æÔÚ\n");
+		printf("è¯¥å›¾ä¹¦ä¿¡æ¯ä¸å­˜åœ¨\n");
 	}
 	if(k==1)
 	{
-	  printf("É¾³ýºóµÄÍ¼ÊéÐÅÏ¢Îª:\n");
+	  printf("åˆ é™¤åŽçš„å›¾ä¹¦ä¿¡æ¯ä¸º:\n");
 	  Output(head);
 	  Save(head);
 	}
 }
 
-void timedelete(LinkList head)//°´³ö°æÊ±¼äÉ¾³ý
+void timedelete(LinkList head)//æŒ‰å‡ºç‰ˆæ—¶é—´åˆ é™¤
 {
     LinkList p1=head,p3=head->next;
     int pubtime,k=0;
 
-	printf("ÇëÊäÈëÒªÉ¾³ýÍ¼ÊéµÄ³ö°æÊ±¼ä£º\n");
+	printf("è¯·è¾“å…¥è¦åˆ é™¤å›¾ä¹¦çš„å‡ºç‰ˆæ—¶é—´ï¼š\n");
 	scanf("%d",&pubtime);
 	while(p3)
 	{
@@ -839,29 +839,29 @@ void timedelete(LinkList head)//°´³ö°æÊ±¼äÉ¾³ý
 	}
 	if(k==0)
 	{
-		printf("·ûºÏÌõ¼þµÄÍ¼ÊéÐÅÏ¢²»´æÔÚ\n");
+		printf("ç¬¦åˆæ¡ä»¶çš„å›¾ä¹¦ä¿¡æ¯ä¸å­˜åœ¨\n");
 	}
 	if(k==1)
 	{
-		printf("É¾³ýºóµÄÍ¼ÊéÐÅÏ¢Îª:\n");
+		printf("åˆ é™¤åŽçš„å›¾ä¹¦ä¿¡æ¯ä¸º:\n");
 	    Output(head);
 		Save(head);
 	}
 }
 
-void modify(LinkList head)//Í¼ÊéÐÅÏ¢ÐÞ¸Ä
+void modify(LinkList head)//å›¾ä¹¦ä¿¡æ¯ä¿®æ”¹
 {
     int  id,pubtime,price,Num;
 	int  flag=0;
 	char sel,name[20],author[20],publisher[20],type[20];
     LinkList p;
 
-	printf("ÇëÊäÈëÒªÐÞ¸ÄÍ¼ÊéµÄ±àºÅ£º\n");
+	printf("è¯·è¾“å…¥è¦ä¿®æ”¹å›¾ä¹¦çš„ç¼–å·ï¼š\n");
 	scanf("%d",&id);
 
 	if(head==NULL)
 	{
-		printf("Ã»ÓÐÍ¼ÊéÐÅÏ¢\n");
+		printf("æ²¡æœ‰å›¾ä¹¦ä¿¡æ¯\n");
 	}
 	for(p=head;p!=NULL;p=p->next)
 	{
@@ -872,100 +872,100 @@ void modify(LinkList head)//Í¼ÊéÐÅÏ¢ÐÞ¸Ä
 		}
 	}
 	if(flag==0)
-		printf("Í¼ÊéÐÅÏ¢²»´æÔÚ\n");
+		printf("å›¾ä¹¦ä¿¡æ¯ä¸å­˜åœ¨\n");
 	if(flag==1)
 	{
-		printf("¸ÃÍ¼ÊéµÄÐÅÏ¢ÒÑ²éÑ¯µ½£¬ÐÅÏ¢ÈçÏÂ£º\n");
-		printf("±àºÅ      ÊéÃû    ×÷Õß     ³ö°æÉç    Àà±ð    ³ö°æÄêÔÂÈÕ   ¼Û¸ñ   ¿â´æ\n");
+		printf("è¯¥å›¾ä¹¦çš„ä¿¡æ¯å·²æŸ¥è¯¢åˆ°ï¼Œä¿¡æ¯å¦‚ä¸‹ï¼š\n");
+		printf("ç¼–å·      ä¹¦å    ä½œè€…     å‡ºç‰ˆç¤¾    ç±»åˆ«    å‡ºç‰ˆå¹´æœˆæ—¥   ä»·æ ¼   åº“å­˜\n");
 	    printf("%d%8s%10s%8s%10s%10d%8d%8d\n",p->id,p->name,p->author,p->publisher,p->type,p->pubtime,p->price,p->Num);
-        //ÐÞ¸ÄÊéÃû
-		printf("ÊÇ·ñÐÞ¸ÄÊéÃû£¬ÇëÊäÈë y or n:\n");
+        //ä¿®æ”¹ä¹¦å
+		printf("æ˜¯å¦ä¿®æ”¹ä¹¦åï¼Œè¯·è¾“å…¥ y or n:\n");
 		scanf(" %c",&sel);
 		if(sel=='y')
 		{
-			printf("ÇëÊäÈëÊéÃû£º\n");
+			printf("è¯·è¾“å…¥ä¹¦åï¼š\n");
 			scanf("%s",name);
 			strcpy(p->name,name);;
 		}
-		//ÐÞ¸Ä×÷ÕßÃû
-		printf("ÊÇ·ñÐÞ¸Ä×÷ÕßÃû£¬ÇëÊäÈë y or n:\n");
+		//ä¿®æ”¹ä½œè€…å
+		printf("æ˜¯å¦ä¿®æ”¹ä½œè€…åï¼Œè¯·è¾“å…¥ y or n:\n");
 		scanf(" %c",&sel);
 		if(sel=='y')
 		{
-			printf("ÇëÊäÈë×÷ÕßÃû£º\n");
+			printf("è¯·è¾“å…¥ä½œè€…åï¼š\n");
 			scanf("%s",author);
 			strcpy(p->author,author);
 		}
-		//ÐÞ¸Ä³ö°æÉç
-	    printf("ÊÇ·ñÐÞ¸Ä³ö°æÉç£¬ÇëÊäÈë y or n:\n");
+		//ä¿®æ”¹å‡ºç‰ˆç¤¾
+	    printf("æ˜¯å¦ä¿®æ”¹å‡ºç‰ˆç¤¾ï¼Œè¯·è¾“å…¥ y or n:\n");
 		scanf(" %c",&sel);
 		if(sel=='y')
 		{
-			printf("ÇëÊäÈë³ö°æÉç£º\n");
+			printf("è¯·è¾“å…¥å‡ºç‰ˆç¤¾ï¼š\n");
 			scanf("%s",publisher);
 			strcpy(p->publisher,publisher);
 		}
-		//ÐÞ¸ÄÍ¼ÊéÀàÐÍ
-	    printf("ÊÇ·ñÐÞ¸ÄÍ¼ÊéÀàÐÍ£¬ÇëÊäÈë y or n:\n");
+		//ä¿®æ”¹å›¾ä¹¦ç±»åž‹
+	    printf("æ˜¯å¦ä¿®æ”¹å›¾ä¹¦ç±»åž‹ï¼Œè¯·è¾“å…¥ y or n:\n");
 		scanf(" %c",&sel);
 		if(sel=='y')
 		{
-			printf("ÇëÊäÈëÍ¼ÊéÀàÐÍ£º\n");
+			printf("è¯·è¾“å…¥å›¾ä¹¦ç±»åž‹ï¼š\n");
 			scanf("%s",type);
 			strcpy(p->type,type);
 		}
-		//ÐÞ¸Ä³ö°æÊ±¼ä
-        printf("ÊÇ·ñÐÞ¸Ä³ö°æÊ±¼ä£¬ÇëÊäÈë y or n:\n");
+		//ä¿®æ”¹å‡ºç‰ˆæ—¶é—´
+        printf("æ˜¯å¦ä¿®æ”¹å‡ºç‰ˆæ—¶é—´ï¼Œè¯·è¾“å…¥ y or n:\n");
 		scanf(" %c",&sel);
 		if(sel=='y')
 		{
-			printf("ÇëÊäÈë³ö°æÊ±¼ä£º\n");
+			printf("è¯·è¾“å…¥å‡ºç‰ˆæ—¶é—´ï¼š\n");
 			scanf("%d",&pubtime);
 			p->pubtime=pubtime;
 		}
-		//ÊÇ·ñÐÞ¸Ä¼Û¸ñ
-		printf("ÊÇ·ñÐÞ¸Ä¼Û¸ñ£¬ÇëÊäÈë y or n:\n");
+		//æ˜¯å¦ä¿®æ”¹ä»·æ ¼
+		printf("æ˜¯å¦ä¿®æ”¹ä»·æ ¼ï¼Œè¯·è¾“å…¥ y or n:\n");
 		scanf(" %c",&sel);
 		if(sel=='y')
 		{
-			printf("ÇëÊäÈë¼Û¸ñ£º\n");
+			printf("è¯·è¾“å…¥ä»·æ ¼ï¼š\n");
 			scanf("%d",&price);
 			p->price=price;
 		}
-		printf("ÊÇ·ñÐÞ¸Ä¿â´æ£¬ÇëÊäÈë y or n:\n");
+		printf("æ˜¯å¦ä¿®æ”¹åº“å­˜ï¼Œè¯·è¾“å…¥ y or n:\n");
 		scanf(" %c",&sel);
 		if(sel=='y')
 		{
-			printf("ÇëÊäÈë¿â´æ£º\n");
+			printf("è¯·è¾“å…¥åº“å­˜ï¼š\n");
 			scanf("%d",&Num);
 			p->Num=Num;
 		}
-		printf("ÐÞ¸ÄºóµÄÍ¼ÊéÐÅÏ¢Îª£º\n");
-        printf("±àºÅ      ÊéÃû    ×÷Õß     ³ö°æÉç    Àà±ð    ³ö°æÄêÔÂÈÕ   ¼Û¸ñ   ¿â´æ\n");
+		printf("ä¿®æ”¹åŽçš„å›¾ä¹¦ä¿¡æ¯ä¸ºï¼š\n");
+        printf("ç¼–å·      ä¹¦å    ä½œè€…     å‡ºç‰ˆç¤¾    ç±»åˆ«    å‡ºç‰ˆå¹´æœˆæ—¥   ä»·æ ¼   åº“å­˜\n");
 	    printf("%d%8s%10s%8s%10s%10d%8d%8d\n",p->id,p->name,p->author,p->publisher,p->type,p->pubtime,p->price,p->Num);
 
 		Save(head);
 	}
 }
 
-void reader(LinkList head, linklist head1)//ÆÕÍ¨¶ÁÕßº¯Êý
+void reader(LinkList head, linklist head1)//æ™®é€šè¯»è€…å‡½æ•°
 {
     do{
     printf("************************************\n");
-    printf("*          1:¸ü¸ÄÃÜÂë              *\n");
-    printf("*          2:²éÑ¯Í¼ÊéÐÅÏ¢          *\n");
-    printf("*          3:½èÔÄÍ¼Êé              *\n");
-    printf("*          4:ÍË³ö                  *\n");
+    printf("*          1:æ›´æ”¹å¯†ç               *\n");
+    printf("*          2:æŸ¥è¯¢å›¾ä¹¦ä¿¡æ¯          *\n");
+    printf("*          3:å€Ÿé˜…å›¾ä¹¦              *\n");
+    printf("*          4:é€€å‡º                  *\n");
     printf("************************************\n\n");
-    printf("   ÇëÊäÈëÄãÒª½øÐÐµÄÏîÄ¿Ñ¡Ïî\n");
+    printf("   è¯·è¾“å…¥ä½ è¦è¿›è¡Œçš„é¡¹ç›®é€‰é¡¹\n");
     scanf("%d", &select);
     switch(select)
     {
         case 1:
-            password(head1);//¶ÁÕß¸ü¸ÄÃÜÂë
+            password(head1);//è¯»è€…æ›´æ”¹å¯†ç 
             break;
         case 2:
-            query(head);//²éÑ¯Í¼ÊéÐÅÏ¢
+            query(head);//æŸ¥è¯¢å›¾ä¹¦ä¿¡æ¯
             break;
         case 3:
             borrow(head);
@@ -974,12 +974,12 @@ void reader(LinkList head, linklist head1)//ÆÕÍ¨¶ÁÕßº¯Êý
     }}while(select!=4);
 }
 
-void password(linklist head1)//¶ÁÕß¸ü¸ÄÃÜÂë
+void password(linklist head1)//è¯»è€…æ›´æ”¹å¯†ç 
 {
     linklist p=head1->next;
-    int flge=0;
+    int flag=0;
     char str[10], password[10];
-    printf("ÇëÊäÈëÄúµÄÓÃ»§Ãû»òÕËºÅ\n");
+    printf("è¯·è¾“å…¥æ‚¨çš„ç”¨æˆ·åæˆ–è´¦å·\n");
     scanf("%s",str);
     int m=1;
     while(p)
@@ -988,11 +988,11 @@ void password(linklist head1)//¶ÁÕß¸ü¸ÄÃÜÂë
 		{
 		    while(m==1)
             {
-                printf("ÇëÊäÈëÄúÔ­À´µÄÃÜÂë\n");
+                printf("è¯·è¾“å…¥æ‚¨åŽŸæ¥çš„å¯†ç \n");
                 scanf("%s", password);
                 if(strcmp(p->password, password)!=0)
                 {
-                    printf("ÃÜÂë´íÎó£¬ÖØÐÂÊäÈëÇë°´1£¬ ÍË³öÇë°´2\n");
+                    printf("å¯†ç é”™è¯¯ï¼Œé‡æ–°è¾“å…¥è¯·æŒ‰1ï¼Œ é€€å‡ºè¯·æŒ‰2\n");
                     scanf("%d", &m);
                 }
                 if(strcmp(p->password, password)==0)
@@ -1001,143 +1001,144 @@ void password(linklist head1)//¶ÁÕß¸ü¸ÄÃÜÂë
 
 		    if(m==2)
                 break;
-			printf("ÇëÊäÈëÄúµÄÐÂÃÜÂë\n");
+			printf("è¯·è¾“å…¥æ‚¨çš„æ–°å¯†ç \n");
 	        scanf("%s", password);
 	        strcpy(p->password,password);
 	        save(head1);
-	        flge=1;
+	        flag=1;
 	        break;
 		}
 		p=p->next;
 	}
-	if(flge==0)
-		printf("ÕËºÅÐÅÏ¢²»´æÔÚ\n");
+	if(flag==0)
+		printf("è´¦å·ä¿¡æ¯ä¸å­˜åœ¨\n");
 }
 
-void query(LinkList head)//²éÑ¯Í¼ÊéÐÅÏ¢
+void query(LinkList head)//æŸ¥è¯¢å›¾ä¹¦ä¿¡æ¯
 {
     do{
     printf("***********************************\n");
-    printf("*         1:°´ÊéÃû²éÕÒ            *\n");
-    printf("*         2:×÷ÕßÃû²éÕÒ            *\n");
-    printf("*         3:°´³ö°æÉç²éÕÒ          *\n");
-    printf("*         4:°´ÊéÃû×÷ÕßÃû²éÕÒ      *\n");
-    printf("*         5:ÍË³ö                  *\n");
+    printf("*         1:æŒ‰ä¹¦åæŸ¥æ‰¾            *\n");
+    printf("*         2:ä½œè€…åæŸ¥æ‰¾            *\n");
+    printf("*         3:æŒ‰å‡ºç‰ˆç¤¾æŸ¥æ‰¾          *\n");
+    printf("*         4:æŒ‰ä¹¦åä½œè€…åæŸ¥æ‰¾      *\n");
+    printf("*         5:é€€å‡º                  *\n");
     printf("***********************************\n\n");
-    printf("     ÇëÊäÈëÄãÒª½øÐÐµÄÏîÄ¿Ñ¡Ïî\n");
+    printf("     è¯·è¾“å…¥ä½ è¦è¿›è¡Œçš„é¡¹ç›®é€‰é¡¹\n");
     scanf("%d", &select);
     switch(select)
     {
         case 1:
-            titlequery(head);//ÊéÃû²éÕÒ
+            titlequery(head);//ä¹¦åæŸ¥æ‰¾
             break;
         case 2:
-            authorquery(head);//×÷ÕßÃû²éÕÒ
+            authorquery(head);//ä½œè€…åæŸ¥æ‰¾
             break;
         case 3:
-            pressquery(head);//³ö°æÉç²éÕÒ
+            pressquery(head);//å‡ºç‰ˆç¤¾æŸ¥æ‰¾
             break;
         case 4:
-            titleauthor(head);//°´ÊéÃû×÷ÕßÃû²éÕÒ
+            titleauthor(head);//æŒ‰ä¹¦åä½œè€…åæŸ¥æ‰¾
             break;
         default:return;
     }}while(select!=5);
 }
 
-void titlequery(LinkList head)//ÊéÃû²éÕÒ
+void titlequery(LinkList head)//ä¹¦åæŸ¥æ‰¾
 {
     LinkList p=head->next;
 	char name[20];
-	int flge=0;
+	int flag=0;
 
-    printf("ÇëÊäÈëÒª²éÑ¯µÄÊéÃû£º\n");
+    printf("è¯·è¾“å…¥è¦æŸ¥è¯¢çš„ä¹¦åï¼š\n");
 	scanf("%s",name);
     while(p)
 	{
 		if(strstr(p->name,name)!=NULL||strstr(name,p->name)!=NULL)
 		{
 			printf("%d%8s%10s%8s%10s%10d%4d%8d\n",p->id,p->name,p->author,p->publisher,p->type,p->pubtime,p->price,p->Num);
-		    flge=1;
+		    flag=1;
 		}
 		  p=p->next;
 	}
-	if(flge==0)
-	 printf("¸ÃÊéÐÅÏ¢²»´æÔÚ\n");
+	if(flag==0)
+	 printf("è¯¥ä¹¦ä¿¡æ¯ä¸å­˜åœ¨\n");
 
 	return;
 }
 
-void authorquery(LinkList head)//×÷ÕßÃû²éÕÒ
+void authorquery(LinkList head)//ä½œè€…åæŸ¥æ‰¾
 {
 	LinkList p=head->next;
 	char author[20];
-	int flge=0;
+	int flag=0;
 
-    printf("ÇëÊäÈëÒª²éÑ¯µÄ×÷ÕßÃû×Ö£º\n");
+    printf("è¯·è¾“å…¥è¦æŸ¥è¯¢çš„ä½œè€…åå­—ï¼š\n");
 	scanf("%s",author);
     while(p)
 	{
 		if(strstr(p->author,author)!=NULL||strstr(author,p->author)!=NULL)
 		{
 			printf("%d%8s%10s%8s%10s%10d%4d%8d\n",p->id,p->name,p->author,p->publisher,p->type,p->pubtime,p->price,p->Num);
-		    flge=1;
+		    flag=1;
 		}
 		  p=p->next;
 	}
-	if(flge==0)
-	 printf("¸ÃÊéÐÅÏ¢²»´æÔÚ\n");
+	if(flag==0)
+	 printf("è¯¥ä¹¦ä¿¡æ¯ä¸å­˜åœ¨\n");
 
 	return;
 }
 
-void pressquery(LinkList head)//³ö°æÉç²éÕÒ
+void pressquery(LinkList head)//å‡ºç‰ˆç¤¾æŸ¥æ‰¾
 {
     LinkList p=head->next;
 	char publisher[20];
-	int flge=0;
+	int flag=0;
 
-    printf("ÇëÊäÈëÒª³ö°æÉçµÄ×÷ÕßÃû×Ö£º\n");
+    printf("è¯·è¾“å…¥è¦å‡ºç‰ˆç¤¾çš„ä½œè€…åå­—ï¼š\n");
 	scanf("%s",publisher);
     while(p)
 	{
 		if(strstr(p->publisher,publisher)!=NULL||strstr(publisher,p->publisher)!=NULL)
 		{
 			printf("%d%8s%10s%8s%10s%10d%4d%8d\n",p->id,p->name,p->author,p->publisher,p->type,p->pubtime,p->price,p->Num);
-		    flge=1;
+		    flag=1;
 		}
 		  p=p->next;
 	}
-	if(flge==0)
-	 printf("¸ÃÊéÐÅÏ¢²»´æÔÚ\n");
+	if(flag==0)
+	 printf("è¯¥ä¹¦ä¿¡æ¯ä¸å­˜åœ¨\n");
 	return;
 }
 void titleauthor(LinkList head)
 {
     LinkList p=head->next;
 	char name[20],author[20];
-	int flge=0;
-	printf("ÇëÊäÈëÒª²éÑ¯µÄÊéÃûºÍ×÷ÕßÃû×Ö£º\n");
+	int flag=0;
+	printf("è¯·è¾“å…¥è¦æŸ¥è¯¢çš„ä¹¦åå’Œä½œè€…åå­—ï¼š\n");
 	scanf("%s %s",name,author);
     while(p)
 	{
 		if((strcmp(p->name,name)==0)&&(strcmp(p->author,author)==0))
 		{
 			printf("%d%8s%10s%8s%10s%10d%4d%8d\n",p->id,p->name,p->author,p->publisher,p->type,p->pubtime,p->price,p->Num);
-		    flge=1;
+		    flag=1;
 		}
 		  p=p->next;
 	}
-	if(flge==0)
-	   printf("¸ÃÊéÐÅÏ¢²»´æÔÚ\n");
+	if(flag==0)
+
+	   printf("è¯¥ä¹¦ä¿¡æ¯ä¸å­˜åœ¨\n");
     return ;
 }
 
 void borrow(LinkList head)
 {
     LinkList p=head->next;
-    int ID,flge=0,a=0;
+    int ID,flag=0,a=0;
     char sel;
-    printf("ÇëÊäÈëÒª½èÔÄÍ¼ÊéµÄ±àºÅ£º\n");
+    printf("è¯·è¾“å…¥è¦å€Ÿé˜…å›¾ä¹¦çš„ç¼–å·ï¼š\n");
     scanf("%d",&ID);
     while(p)
 	{
@@ -1145,33 +1146,33 @@ void borrow(LinkList head)
 		{
 		    if(p->Num==0)
             {
-                printf("ÒÑÈ«²¿½è³ö£¡");
+                printf("å·²å…¨éƒ¨å€Ÿå‡ºï¼");
             }
             else
             {
                 a=p->Num;
-                printf("ÇëÈ·¶¨Í¼ÊéÐÅÏ¢£º\n");
-                printf("±àºÅ      ÊéÃû    ×÷Õß     ³ö°æÉç   Àà±ð ³ö°æÄêÔÂÈÕ ¼Û¸ñ   ¿â´æ\n");
+                printf("è¯·ç¡®å®šå›¾ä¹¦ä¿¡æ¯ï¼š\n");
+                printf("ç¼–å·      ä¹¦å    ä½œè€…     å‡ºç‰ˆç¤¾   ç±»åˆ« å‡ºç‰ˆå¹´æœˆæ—¥ ä»·æ ¼   åº“å­˜\n");
                 printf("%d%8s%10s%8s%10s%10d%4d%8d\n",p->id,p->name,p->author,p->publisher,p->type,p->pubtime,p->price,p->Num);
             }
-            flge=1;
+            flag=1;
             break;
 		}
 		  p=p->next;
 	}
-	if(flge==0)
+	if(flag==0)
     {
-        printf("¸ÃÊéÐÅÏ¢²»´æÔÚ\n");
+        printf("è¯¥ä¹¦ä¿¡æ¯ä¸å­˜åœ¨\n");
     }
-    if(flge!=0&&a!=0)
+    if(flag!=0&&a!=0)
     {
-        printf("È·¶¨½èÔÄÃ´(Ò»¸öÕÊºÅÖ»ÄÜ½èÒ»±¾)£¿ÇëÊäÈë y or n:\n");
+        printf("ç¡®å®šå€Ÿé˜…ä¹ˆ(ä¸€ä¸ªå¸å·åªèƒ½å€Ÿä¸€æœ¬)ï¼Ÿè¯·è¾“å…¥ y or n:\n");
         scanf(" %c",&sel);
         if(sel=='y')
 		{
 			p->Num=p->Num-1;
-			printf("µ±Ç°´ËÍ¼ÊéÐÅÏ¢Îª£º\n");
-			printf("±àºÅ      ÊéÃû    ×÷Õß     ³ö°æÉç   Àà±ð ³ö°æÄêÔÂÈÕ ¼Û¸ñ   ¿â´æ\n");
+			printf("å½“å‰æ­¤å›¾ä¹¦ä¿¡æ¯ä¸ºï¼š\n");
+			printf("ç¼–å·      ä¹¦å    ä½œè€…     å‡ºç‰ˆç¤¾   ç±»åˆ« å‡ºç‰ˆå¹´æœˆæ—¥ ä»·æ ¼   åº“å­˜\n");
             printf("%d%8s%10s%8s%10s%10d%4d%8d\n",p->id,p->name,p->author,p->publisher,p->type,p->pubtime,p->price,p->Num);
 		}
 		if(sel=='n')
