@@ -328,7 +328,7 @@ void addread(linklist head1)
     char password[20];
     char type[10];
     FILE *fp;
-    if((fp=fopen("userinfo.dat","r+"))==NULL)
+    if((fp=fopen("userinfo.txt","r+"))==NULL)
     {
         printf("File Open Error!\n");
         exit(0);
@@ -371,7 +371,7 @@ void addallread(linklist head1)
 	char name[10],id[20],password[20],type[10];
     FILE *fp;
 
-    if((fp=fopen("userinfo.dat","r"))==NULL)
+    if((fp=fopen("userinfo.txt","r"))==NULL)
 	{
 		printf("File Open Error!\n");
 		exit(0);
@@ -447,7 +447,7 @@ void deleteallread(linklist head1)
     linklist p,rear=head1,pre,q;
     char name[10],str[10],id[20],password[20],type[10];
     FILE *fp;
-    if((fp=fopen("userinfo.dat","r"))==NULL)
+    if((fp=fopen("userinfo.txt","r"))==NULL)
 	{
 		printf("File Open Error!\n");
 		exit(0);
@@ -523,7 +523,7 @@ void save(linklist head1)
 {
     FILE *fp;
     linklist p;
-    if((fp=fopen("userinfo.dat","w"))==NULL)
+    if((fp=fopen("userinfo.txt","w"))==NULL)
     {
         printf("File Open Error!\n");
         exit(0);
@@ -597,7 +597,7 @@ void Input(LinkList head)//单独添加图书信息
 	int id,pubtime,price,Num;
     FILE *fp;
 
-    if((fp=fopen("bookinfo.dat","r"))==NULL)
+    if((fp=fopen("bookinfo.txt","r"))==NULL)
 	{
 		printf("File Open Error!\n");
 		exit(0);
@@ -648,7 +648,7 @@ void allinput(LinkList head)//批量添加图书信息
 	int id,pubtime,price,Num;
     FILE *fp;
 
-    if((fp=fopen("bookinfo.dat","r"))==NULL)
+    if((fp=fopen("bookinfo.txt","r"))==NULL)
 	{
 		printf("File Open Error!\n");
 		exit(0);
@@ -699,7 +699,7 @@ void Save(LinkList head)//将图书馆信息导入文件中
 	FILE *fp;
 	LinkList p;
 
-	if((fp=fopen("bookinfo.dat","w"))==NULL)
+	if((fp=fopen("bookinfo.txt","w"))==NULL)
 	{
 		printf("File Open Error!\n");
 		exit(0);
@@ -1128,6 +1128,7 @@ void titleauthor(LinkList head)
 		  p=p->next;
 	}
 	if(flag==0)
+
 	   printf("该书信息不存在\n");
     return ;
 }
